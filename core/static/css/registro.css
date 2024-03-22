@@ -1,0 +1,49 @@
+body{
+    color: #ffffff;
+    background-attachment: fixed !important;
+    background: radial-gradient(circle, transparent 20%, #000000 20%,
+         #000000 80%, transparent 80%, transparent) 0% 0% / 178px 178px,
+          radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%,
+           transparent 80%, transparent) 89px 89px / 178px 178px, linear-gradient(#ffffff 10px, transparent 10px)
+            0px -5px / 89px 89px, linear-gradient(90deg, #ffffff 10px, #000000 10px) -5px 0px / 89px 89px #000000;
+    background-size: 178px 178px, 178px 178px, 89px 89px, 89px 89px;
+    background-color: #ffffff;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form-control {
+    border-color: #ccc;
+}
+
+.form-control:focus {
+    border-color: #0000ff8e;
+}
+.btn-primary {
+    background-color: #1100ff;
+    color: #ffffff;
+}
+form {
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    padding: 20px;
+    margin-top: 20px;
+}
+input[type="text"], input[type="password"] {
+    transition: .3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #0000ff;
+}
+text-center messages{
+    width: 100px;
+}
